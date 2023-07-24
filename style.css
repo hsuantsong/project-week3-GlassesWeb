@@ -1,0 +1,379 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    line-height: 1.5;
+}
+
+* {
+    box-sizing: border-box;
+    outline: 1px black solid;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+.fz-16 {
+    font-size: 16px;
+}
+
+.fz-20 {
+    font-size: 20px;
+}
+
+.fz-24 {
+    font-size: 24px;
+}
+
+.fz-36 {
+    font-size: 36px;
+}
+
+.fz-48 {
+    font-size: 48px;
+}
+
+.fz-64 {
+    font-size: 64px;
+}
+
+
+.d-flex {
+    display: flex;
+}
+
+.bg-primary {
+    background: #aa0601;
+}
+
+.bg-secondary {
+    background: #fbf2f2;
+}
+
+.c-secondary {
+    color: #650300;
+}
+
+
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 12px;
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        max-width: 373px;
+        padding: 0;
+    }
+}
+
+.nav-list a {
+    color: #fff;
+    padding: 0 32px;
+}
+
+.nav-list li:last-child a {
+    padding-right: 0;
+}
+
+.logo img {
+    width: 80px;
+    height: 49px;
+    margin: 12px 0;
+}
+
+@media (max-width: 767px) {
+    .logo img {
+        padding-left: 12px;
+    }
+}
+
+.navbar {
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (max-width: 767px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-list {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .nav-list li {
+        border: 1px solid #fff;
+        width: 50%;
+    }
+
+    .nav-list a {
+        display: block;
+        font-size: 16px;
+        text-align: center;
+        padding: 12px 0;
+    }
+}
+
+
+.banner {
+    background: url(/home-header.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 296px 0;
+}
+
+@media (max-width: 992px) {
+    .banner {
+        background: url(/home-header-sm.png)no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+}
+
+@media (max-width: 767px) {
+    .banner {
+        padding: 144px 0;
+    }
+}
+
+.banner-content {
+    text-align: right;
+}
+
+
+.banner-content h2 {
+    font-weight: bold;
+}
+
+@media (max-width: 767px) {
+    .banner-content h1 {
+        font-size: 16px;
+    }
+
+    .banner-content h2 {
+        font-size: 24px;
+    }
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 4px;
+}
+
+.btn a {
+    display: inline-block;
+    color: #fff;
+    padding: 6px 12px;
+}
+
+.about {
+    padding: 80px 0;
+}
+
+@media (max-width: 992px) {
+    .about {
+        padding-bottom: 56px;
+    }
+}
+
+@media (max-width: 767px) {
+    .about {
+        padding-top: 40px;
+        padding-bottom: 16px;
+    }
+}
+
+.about h2 {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+
+@media (max-width: 767px) {
+    .about h2 {
+        font-size: 24px;
+    }
+}
+
+.about-detail h3 {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.about-detail {
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-detail li {
+    width: 23.6%;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 992px) {
+    .about-detail li {
+        width: 48%;
+    }
+
+    .about-detail p {
+        margin-bottom: 24px;
+    }
+}
+
+@media (max-width: 767px) {
+    .about-detail li {
+        width: 100%;
+    }
+}
+
+.about-detail img {
+    width: 100px;
+    margin-bottom: 16px;
+}
