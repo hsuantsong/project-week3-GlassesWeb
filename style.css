@@ -150,6 +150,10 @@ img {
     height: auto;
 }
 
+.fz-14 {
+    font-size: 14px;
+}
+
 .fz-16 {
     font-size: 16px;
 }
@@ -464,6 +468,10 @@ img {
     width: 648px;
 }
 
+.mobile {
+    display: none;
+}
+
 @media (max-width: 992px) {
     .collab {
         background: url(./images/index-bg-md.png) no-repeat;
@@ -493,5 +501,87 @@ img {
         font-size: 24px;
         margin-bottom: 24px;
     }
+
+    .pc {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+}
+
+.recommand h2 {
+    font-weight: bold;
+    margin-bottom: 48px;
+}
+
+.recommand {
+    padding: 80px 0;
+}
+
+
+.recommand-date {
+    color: #707070;
+    padding-top: 48px;
+}
+
+.recommand-card {
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.recommand-card li {
+    width: 23.6%;
+    box-shadow: 0px 2px 6px #00000029;
+    border: 1px solid #DEE2E6;
+    border-radius: 4px;
+}
+
+.card-content {
+    padding: 16px;
+}
+
+.card-content .name {
+    padding-bottom: 8px;
+}
+
+@media (max-width: 992px) {
+    .recommand-card li {
+        width: 48%;
+    }
+
+    .recommand-card li:nth-child(-n+2) {
+        margin-bottom: 24px;
+    }
+
+    .review {
+        height: 48px;
+    }
+
+    .recommand-date {
+        padding-top: 72px;
+    }
+}
+
+@media (max-width: 767px) {
+    .recommand {
+        padding: 40px 0;
+    }
+
+    .recommand h2 {
+        font-size: 24px;
+        margin-bottom: 24px;
+    }
+
+    .recommand-card li {
+        width: 100%;
+    }
+
+    .recommand-card li:not(:last-child) {
+        margin-bottom: 16px;
+    }
+
 
 }
