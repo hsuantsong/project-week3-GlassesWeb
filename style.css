@@ -682,6 +682,10 @@ img {
     border: none;
 }
 
+.contact-form input[type="submit"]:hover {
+    background: #650300;
+}
+
 @media (max-width: 992px) {
     .contact-form input[type="submit"] {
         width: 58.33%;
